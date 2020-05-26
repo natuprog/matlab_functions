@@ -1,0 +1,28 @@
+format compact
+uiopen('C:\MATLAB6p1\work\Sesion02',1)
+%Primera hora: Resolucion de una ENL y un SENL
+type f2_1
+
+function [ y ] = f2_1( x )
+
+y = log(x) - 3*x+5;
+fplot('f2_1',[0,10]), grid
+fplot('f2_1',[0,3]), grid
+fplot('f2_1',[0.5,2.5]), grid
+fplot('f2_1',[0 0.001]), grid
+fplot('f2_1',[0 0.01]), grid
+type bipart
+end
+%F2_1 Summary of this function goes here
+%  Detailed explanation goes here
+
+function y = f2_1(x)
+??? Strings passed to EVAL cannot contain function declarations.
+
+uiopen('C:\MATLAB6p1\work\f2_1.m',1)
+fschange('C:\MATLAB6p1\work\f2_1.m');
+clear f2_1
+uiopen('C:\MATLAB6p1\work\bipart.m',1)
+uiopen('C:\MATLAB6p1\work\bipart2.m',1)
+edit bipart2
+quit
